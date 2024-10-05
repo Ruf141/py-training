@@ -3,5 +3,6 @@ total = 0
 for i in range(5):
     total = total + score[i]
 average = total / 5
+
 print("合格点", total)
 print("平均点", average)
