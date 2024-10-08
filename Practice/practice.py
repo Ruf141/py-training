@@ -1,5 +1,8 @@
-# 10!を求める
-a = 10
-for i in range(9,0,-1):
-      a = a * i
-print("10!=",a)
+#1からnまで足し合わせる
+
+def addup(n):
+    a = 0
+    for i in range(1, n+1):
+        a = a + i
+    return a
+print(addup(10))
