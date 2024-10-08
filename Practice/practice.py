@@ -1,5 +1,5 @@
 # 10!を求める
 a = 10
 for i in range(9,0,-1):
-  a = a * i
-  print("10!=",a)
+      a = a * i
+print("10!=",a)
