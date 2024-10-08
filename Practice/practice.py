@@ -1,8 +1,19 @@
-#1からnまで足し合わせる
+def roman_to_int(s):
+    roman_map = {
+        "I": 1, "V": 5, "X": 10, 
+        "L": 50, "C": 100, "D": 500, 
+        "M": 1000
+    }
 
-def addup(n):
-    a = 0
-    for i in range(1, n+1):
-        a = a + i
-    return a
-print(addup(10))
+    total = 0
+
+    for i in range(len(s)):
+        current = roman_map[s[i]]
+        if i + 1 < len(s) and current < roman_map[s[i + 1]]:
+                total -= current
+        else:
+            total += current
+
+    return total
+
+print(roman_to_int("III"))

@@ -1,4 +1,4 @@
-def roman_to_int(s: str) -> int:
+def roman_to_int(s):
     # ローマ数字とその値を対応付ける辞書を定義
     roman_map = {
         "I": 1, "V": 5, "X": 10, 
