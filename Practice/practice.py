@@ -8,7 +8,9 @@ def roman_to_int(s):
     total = 0
 
     for i in range(len(s)):
+        print(s)
         current = roman_map[s[i]]
+        print("current", current)
         if i + 1 < len(s) and current < roman_map[s[i + 1]]:
                 total -= current
         else:
@@ -17,3 +19,4 @@ def roman_to_int(s):
     return total
 
 print(roman_to_int("III"))
+print(roman_to_int("L"))
